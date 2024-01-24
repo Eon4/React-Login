@@ -6,24 +6,21 @@ export const InputField = (props) => {
       {props.labelText && (
         <label className={style.labelStyle}>{props.labelText}</label>
       )}
-
       {props.type === "submit" ? (
-        <input 
-        className={style.inputStyle}
-        type={props.type}
-        value={props.text}
+        <input
+          className={style.inputStyle}
+          type={props.type}
+          value={props.text}
         ></input>
-
-      ): ( 
-
-      <input
-        className={style.inputStyle}
-        type={props.type}
-        name={props.name}
-        placeholder={props.placeholder}
-        required={props.required}
-      ></input>
+      ) : (
+        <input
+          className={style.inputStyle}
+          type={props.type}
+          name={props.name}
+          placeholder={props.placeholder}
+          required={props.required}
+        ></input>
       )}
-      </>
+    </>
   );
 };

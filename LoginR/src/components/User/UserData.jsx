@@ -1,7 +1,7 @@
 
 import { useContext } from "react";
 import { UserContext } from "../context/UserContext";
-import { InputField } from "../InputField/InputField";
+import { InputField } from "../inputField/inputField";
 import { Form } from "../Form/Form";
 
 export const UserData = () => {
